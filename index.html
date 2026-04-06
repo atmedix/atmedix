@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATmedix | (주)에이티메딕스 - 체외진단 의료기기 전문기업</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --at-yellow: #FFD700;
+            --at-red: #E60012;
+            --at-dark: #1a1a1a;
+            --at-grey: #666666;
+            --at-bg: #fdfdfd;
+        }
+
+        body {
+            font-family: 'Pretendard', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--at-dark);
+            line-height: 1.7;
+            background-color: var(--at-bg);
+            word-break: keep-all;
+        }
+
+        /* Navigation */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 4px solid var(--at-yellow);
+            padding: 10px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo img { height: 45px; vertical-align: middle; }
+
+        nav a {
+            text-decoration: none;
+            color: var(--at-dark);
+            font-weight: 600;
+            margin-left: 35px;
+            font-size: 0.95rem;
+            transition: 0.3s;
+        }
+
+        nav a:hover { color: var(--at-red); }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(45deg, rgba(255,215,0,0.1) 0%, rgba(230,0,18,0.05) 100%), #fff;
+            padding: 140px 8% 100px;
+            text-align: center;
+        }
+
+        .hero h1 { font-size: 3.5rem; margin-bottom: 20px; font-weight: 800; }
+        .hero p { font-size: 1.4rem; color: var(--at-grey); max-width: 800px; margin: 0 auto; }
+        .hero .badge { 
+            background: var(--at-red); color: #fff; padding: 5px 15px; 
+            border-radius: 20px; font-size: 0.9rem; font-weight: 600; display: inline-block; margin-bottom: 20px;
+        }
+
+        /* Section Common */
+        section { padding: 100px 8%; }
+        .section-header { text-align: center; margin-bottom: 60px; }
+        .section-header h2 { font-size: 2.2rem; display: inline-block; position: relative; padding-bottom: 15px; }
+        .section-header h2::after { 
+            content: ''; width: 60%; height: 4px; background: var(--at-yellow); 
+            position: absolute; bottom: 0; left: 20%; 
+        }
+
+        /* Core Competency Grid */
+        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+        .card { 
+            background: #fff; padding: 40px; border-radius: 15px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05); text-align: center; border: 1px solid #eee;
+        }
+        .card h3 { color: var(--at-red); margin-bottom: 15px; }
+
+        /* Location Section */
+        .location-box { background: #fff; border-radius: 20px; overflow: hidden; display: flex; box-shadow: 0 10px 40px rgba(0,0,0,0.08); }
+        .loc-info { padding: 50px; flex: 1; }
+        .loc-item { margin-bottom: 30px; }
+        .loc-item h4 { color: var(--at-red); margin-bottom: 5px; font-size: 1.2rem; }
+        .loc-item p { margin: 0; color: var(--at-grey); }
+
+        /* Footer */
+        footer { background: #1a1a1a; color: #fff; padding: 60px 8% 30px; }
+        .footer-content { display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 1px solid #333; padding-bottom: 40px; }
+        .footer-brand h3 { font-size: 1.8rem; margin-bottom: 10px; color: var(--at-yellow); }
+        .footer-info p { margin: 5px 0; color: #aaa; font-size: 0.9rem; }
+        .copyright { text-align: center; padding-top: 30px; color: #555; font-size: 0.85rem; }
+
+        @media (max-width: 900px) {
+            .grid-3 { grid-template-columns: 1fr; }
+            .location-box { flex-direction: column; }
+            .hero h1 { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo"><img src="에이티메딕스 로고.jpg" alt="ATmedix"></div>
+    <nav>
+        <a href="#about">기업소개</a>
+        <a href="#competency">핵심역량</a>
+        <a href="#location">오시는 길</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="badge">In Vitro Diagnostics Specialized Company</div>
+    <h1>진단 기술의 새로운 기준<br><span style="color:var(--at-red)">(주)에이티메딕스</span></h1>
+    <p>정확한 진단 솔루션을 통해 인류의 건강한 미래를 설계하는</p>
+    <p>체외진단 의료기기 전문 기업입니다.</p>
+</section>
+
+<section id="about" style="background: #fff;">
+    <div class="section-header">
+        <h2>About ATmedix</h2>
+    </div>
+    <div style="max-width: 900px; margin: 0 auto; text-align: center; color: var(--at-grey);">
+        <p style="font-size: 1.2rem; margin-bottom: 30px;">
+            (주)에이티메딕스는 끊임없는 연구개발과 철저한 품질 관리를 바탕으로,<br>
+            의료 현장에서 가장 신뢰받는 체외진단 의료기기를 공급합니다.
+        </p>
+        <div class="grid-3" style="margin-top: 50px;">
+            <div><h4 style="color:var(--at-dark)">Vision</h4><p>글로벌 진단 시장의 리더</p></div>
+            <div><h4 style="color:var(--at-dark)">Mission</h4><p>정밀 진단을 통한 삶의 질 향상</p></div>
+            <div><h4 style="color:var(--at-dark)">Values</h4><p>신뢰 · 혁신 · 인류애</p></div>
+        </div>
+    </div>
+</section>
+
+<section id="competency">
+    <div class="section-header">
+        <h2>Core Competency</h2>
+    </div>
+    <div class="grid-3">
+        <div class="card">
+            <h3>R&D 전문성</h3>
+            <p>안성 연구소를 중심으로 한 자체 기술력을 통해 차별화된 진단 알고리즘과 플랫폼을 개발합니다.</p>
+        </div>
+        <div class="card">
+            <h3>품질 보증</h3>
+            <p>체외진단의료기기법을 준수하는 엄격한 제조 공정 및 품질관리 시스템(GMP)을 구축하고 있습니다.</p>
+        </div>
+        <div class="card">
+            <h3>글로벌 네트워크</h3>
+            <p>국내외 파트너십을 통해 신속한 제품 공급 및 맞춤형 진단 솔루션을 제안합니다.</p>
+        </div>
+    </div>
+</section>
+
+<section id="location" style="background: #fff;">
+    <div class="section-header">
+        <h2>Locations</h2>
+    </div>
+    <div class="location-box">
+        <div class="loc-info">
+            <div class="loc-item">
+                <h4>Headquarters (본사)</h4>
+                <p>서울특별시 서초구 사임당로 39, 3층(서초동, 한성빌딩)</p>
+                <p style="font-size: 0.85rem; color:#bbb;">3F, 39 Saimdang-ro, Seocho-gu, Seoul, Republic of Korea</p>
+            </div>
+            <div class="loc-item">
+                <h4>R&D Center (연구소)</h4>
+                <p>경기도 안성시 공도읍 서동대로 4035 2층</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-brand">
+            <h3>ATmedix</h3>
+            <p>In vitro diagnostics specialized company</p>
+        </div>
+        <div class="footer-info">
+            <p><strong>(주)에이티메딕스</strong></p>
+            <p>본사: 서울특별시 서초구 사임당로 39, 3층 (서초동)</p>
+            <p>연구소: 경기도 안성시 공도읍 서동대로 4035 2층</p>
+            <p>대표 이메일: biotech@atmedix.com</p>
+            <p>공식 홈페이지: atmedix.com</p>
+        </div>
+    </div>
+    <div class="copyright">
+        Copyright © 2026 ATmedix Inc. All Rights Reserved.
+    </div>
+</footer>
+
+</body>
+</html>
